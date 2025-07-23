@@ -322,6 +322,21 @@ Options:
   -h, --help                                     display help for command
 ```
 
+## Programmatic Usage
+
+You can use json-autotranslate in Node.js without spawning the CLI:
+
+```ts
+import { translate } from 'json-autotranslate';
+
+await translate({
+  inputDir: 'locales',
+  service: 'google-translate',
+});
+```
+
+All CLI options are available as camel-cased properties of the options object.
+
 ## Contributing
 
 If you'd like to contribute to this project, please feel free to open a pull

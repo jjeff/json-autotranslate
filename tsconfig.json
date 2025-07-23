@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "target": "ESNext"
   },
-  "files": ["src/index.ts"]
+  "include": ["src/**/*.ts"]
 }
